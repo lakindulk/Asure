@@ -10,7 +10,7 @@ from flask_cors import CORS
 app=Flask(__name__)
 CORS(app)
 data=pd.read_csv('https://res.cloudinary.com/iplus/raw/upload/v1662091543/test/Reserch/Cleaned_data_jkxneq.csv')
-pipe=pickle.load(open('./app/RidgeModel1.pkl' ,'rb'))
+pipe=pickle.load(open('./app/RidgeModel1.pkl' ,'rb'
 
 @app.route('/',methods=['GET'])
 def test():
