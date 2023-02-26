@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Python: Flask",
             "type": "python",
@@ -11,8 +12,9 @@
             "module": "flask",
             "env": {
                 "FLASK_APP": "main:app",
-                "Env:FLASK_ENV":"development"  
-            },          
+                "FLASK_ENV":"development",
+                "FLASK_DEBUG": "1"
+            },
             "args": [
                 "run",
                 "--no-debugger",
